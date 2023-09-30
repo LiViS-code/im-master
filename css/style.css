@@ -119,7 +119,7 @@ a {
 }
 
 .container__content ul li {
-  background: url(/img/marker.svg) no-repeat 0 50%;
+  background: url(../img/marker.png) no-repeat 0 50%;
 }
 
 .txt-align-left {
