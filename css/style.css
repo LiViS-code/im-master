@@ -29,16 +29,12 @@ a {
 .main {
   margin: 0 auto;
   max-width: 1440px;
+  min-width: 1440px;
 }
 
 .wrapper {
   margin: 0 auto;
   padding: 0 130px;
-}
-
-.header__wrap {
-  padding-top: 30px;
-  justify-content: space-between;
 }
 
 .header__logo {
@@ -47,9 +43,33 @@ a {
 
 .header__wrap,
 .header__logo,
-.container {
+.container,
+.header__menu ul,
+.container-features__numbers-box,
+.container-cards,
+.contacts-container,
+.review-cards-wrap,
+.slider-line,
+.slider,
+.client-wrap,
+.contacts-form,
+.social,
+.contacts-wrap,
+.social-wrap {
   display: flex;
-  align-items: center;
+}
+
+.header__wrap,
+.header__menu ul,
+.container-cards,
+.contacts-container,
+.slider,
+.contacts-wrap {
+  justify-content: space-between;
+}
+
+.header__wrap {
+  padding-top: 30px;
 }
 
 .header__logo img {
@@ -58,13 +78,17 @@ a {
 
 .header__logo span {
   font-size: 24px;
-  font-weight: 700;
   line-height: 29px;
 }
 
+.header__logo span,
+.container__content h1,
+.features__number,
+.card-wrap p {
+  font-weight: 700;
+}
+
 .header__menu ul {
-  display: flex;
-  justify-content: space-between;
   gap: 60px;
 }
 
@@ -104,11 +128,11 @@ a {
 
 .container__content h1 {
   font-size: 64px;
-  font-weight: 700;
   line-height: 77px;
 }
 
-.container__content ul li h4 {
+.container__content ul li h4,
+.col1 {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -144,17 +168,30 @@ a {
 
 .button:hover,
 .button:focus {
-  cursor: pointer;
   color: #fff;
   background-color: #4e4e4e;
 }
 
-.container-features {
+.button:hover,
+.button:focus,
+.btn-next:hover,
+.btn-prev:hover,
+.social:hover,
+.social:focus {
+  cursor: pointer;
+}
+
+.container-features,
+.features__number,
+.features__text,
+.section-details,
+.section-reviews,
+.section-options,
+.section-contact {
   text-align: center;
 }
 
 .container-features__numbers-box {
-  display: flex;
   justify-content: space-evenly;
   margin-bottom: 100px;
 }
@@ -166,19 +203,11 @@ a {
 
 .features__number {
   font-size: 60px;
-  font-weight: 700;
 }
 
 .features__text {
   font-size: 18px;
   font-weight: 400;
-}
-
-.features__number,
-.features__text,
-.section-details,
-.section-reviews {
-  text-align: center;
 }
 
 .details-wrap {
@@ -188,17 +217,10 @@ a {
 .section-options,
 .section-contact {
   padding: 40px 0;
-  text-align: center;
 }
 
 .section-contact {
   padding-bottom: 80px;
-}
-
-.container-cards,
-.contacts-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .card-wrap {
@@ -213,19 +235,10 @@ a {
 
 .card-wrap p {
   font-size: 20px;
-  font-weight: 700;
 }
 
 .review-cards-wrap {
   overflow: hidden;
-}
-
-.review-cards-wrap,
-.slider-line,
-.slider,
-.client-wrap,
-.contacts-form {
-  display: flex;
 }
 
 .review-card {
@@ -238,17 +251,16 @@ a {
   margin-right: 24px;
 }
 
-.client-wrap {
+.client-wrap,
+.social {
   justify-content: center;
 }
 
 .slider-line {
   position: relative;
   left: 0;
+  gap: 24px;
   transition: left ease 1s;
-}
-.slider {
-  justify-content: space-between;
 }
 
 .btn-next,
@@ -258,17 +270,16 @@ a {
   border: none;
 }
 
-.btn-next:hover,
-.btn-prev:hover {
-  cursor: pointer;
-}
-
 .slider-nav {
   text-align: end;
 }
 
 .contacts-form {
   width: 50%;
+}
+
+.contacts-form,
+.contacts-wrap {
   flex-direction: column;
 }
 
@@ -281,7 +292,6 @@ a {
 
 .contacts-form input {
   margin-bottom: 20px;
-  height: 44px;
 }
 
 .contacts-form textarea {
@@ -290,6 +300,7 @@ a {
 
 .contacts-form input,
 .contacts-form textarea {
+  padding: 15px;
   border-radius: 15px;
   border: 1px solid #000;
 }
@@ -306,18 +317,8 @@ a {
   letter-spacing: 0.44px;
 }
 
-.contacts-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .contacts-tbl td {
   padding: 15px;
-}
-
-.col1 {
-  font-weight: 500;
 }
 
 .col2 {
@@ -325,13 +326,10 @@ a {
 }
 
 .social-wrap {
-  display: flex;
   gap: 15px;
 }
 
 .social {
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
@@ -347,7 +345,6 @@ a {
 
 .social:hover,
 .social:focus {
-  cursor: pointer;
   background-color: #4e4e4e;
 }
 
