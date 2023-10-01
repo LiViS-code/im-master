@@ -72,6 +72,12 @@ a {
   padding-top: 30px;
 }
 
+.header__wrap,
+.header__logo,
+.social {
+  align-items: center;
+}
+
 .header__logo img {
   width: 80px;
 }
@@ -327,11 +333,6 @@ a {
 
 .social-wrap {
   gap: 15px;
-}
-
-.header__wrap,
-.social {
-  align-items: center;
 }
 
 .social {
