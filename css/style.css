@@ -49,8 +49,8 @@ a {
 .container-cards,
 .contacts-container,
 .review-cards-wrap,
-.slider-line,
-.slider,
+.slide-line,
+.slide,
 .client-wrap,
 .contacts-form,
 .social,
@@ -63,7 +63,7 @@ a {
 .header__menu ul,
 .container-cards,
 .contacts-container,
-.slider,
+.slide,
 .contacts-wrap {
   justify-content: space-between;
 }
@@ -262,7 +262,7 @@ a {
   justify-content: center;
 }
 
-.slider-line {
+.slide-line {
   position: relative;
   left: 0;
   gap: 24px;
@@ -276,7 +276,7 @@ a {
   border: none;
 }
 
-.slider-nav {
+.slide-nav {
   text-align: end;
 }
 

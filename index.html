@@ -202,20 +202,28 @@
       <section class="section-reviews gap-section-btm">
         <div class="wrapper">
           <h2 class="title-section gap-bottom">Відгуки</h2>
-          <p class="slider-nav gap-bottom">
-            <button class="btn-next">
-              <img src="./img/arrow_left.svg" alt="arrow to left" />
+          <div class="slide-nav gap-bottom" id="slide-nav">
+            <button class="btn-next" id="btn-next">
+              <img
+                src="./img/arrow_left.svg"
+                alt="arrow to left"
+                id="arrow-left"
+              />
             </button>
-            <span class="counter-slider">
-              <span class="current-slider" id="current">1</span>/3
+            <span class="counter-slide">
+              <span class="current-slide" id="current">1</span>/3
             </span>
-            <button class="btn-prev">
-              <img src="./img/arrow_right.svg" alt="arrow to right" />
+            <button class="btn-prev" id="btn-prev">
+              <img
+                src="./img/arrow_right.svg"
+                alt="arrow to right"
+                id="arrow-right"
+              />
             </button>
-          </p>
-          <div class="review-cards-wrap">
-            <div class="slider-line">
-              <div class="slider">
+          </div>
+          <div class="review-cards-wrap" id="slide-screen">
+            <div class="slide-line" id="slide-line">
+              <div class="slide">
                 <div class="review-card txt-align-left">
                   <div class="client-wrap gap-bottom">
                     <div class="gap-right">
@@ -293,7 +301,7 @@
                 </div>
               </div>
 
-              <div class="slider">
+              <div class="slide">
                 <div class="review-card txt-align-left">
                   <div class="client-wrap gap-bottom">
                     <div class="gap-right">
@@ -371,7 +379,7 @@
                 </div>
               </div>
 
-              <div class="slider">
+              <div class="slide">
                 <div class="review-card txt-align-left">
                   <div class="client-wrap gap-bottom">
                     <div class="gap-right">
@@ -523,7 +531,7 @@
       </section>
     </main>
     <footer></footer>
-    <script src="./js/slider-reviews.js"></script>
+    <script src="./js/slide-reviews.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
