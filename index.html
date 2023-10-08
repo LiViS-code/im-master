@@ -14,12 +14,26 @@
     <title>Я - майстер!</title>
   </head>
   <body>
-    <header class="header bg-grey">
+    <header class="header">
       <div class="wrapper">
-        <div class="header__wrap">
+        <div class="header__container">
           <div class="header__logo">
             <img src="./img/logo.png" alt="logo" />
             <span>LOGO</span>
+            <div class="toggle-menu" id="toggle-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mob-menu__container" id="mob-menu">
+              <nav class="menu-mobile">
+                <ul>
+                  <li><a href="#features">Переваги</a></li>
+                  <li><a href="#details">Про товар</a></li>
+                  <li><a href="#reviews">Відгуки</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
           <nav class="header__menu">
             <ul>
@@ -32,58 +46,76 @@
       </div>
     </header>
     <main class="main">
-      <section class="section-promo bg-grey gap-section-btm">
+      <section class="presentation-section">
         <div class="wrapper">
           <div class="container">
-            <div class="container__content gap-right">
-              <h1 class="gap-bottom">Заголовок</h1>
-              <p class="gap-bottom">
+            <div class="content-container">
+              <h1 class="presentation-section__title">Заголовок</h1>
+              <p class="presentation-section__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
                 Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos.
               </p>
-              <button class="button" type="button">Button</button>
+              <a
+                class="link-button presentation-section__link-button"
+                href="#contacts"
+                >Замовити</a
+              >
             </div>
 
-            <div class="container__img">
-              <img src="./img/hero.png" alt="" />
+            <div class="img-container container-reorder">
+              <img
+                class="presentation-img"
+                src="./img/hero.png"
+                width="100%"
+                alt="presentation"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-features gap-section-btm">
+      <section class="figures-section">
         <div class="wrapper">
-          <div class="container-features">
-            <div class="container-features__title gap-bottom">
-              <h2 class="title-section gap-bottom">Основні цифри</h2>
+          <div class="figures-container">
+            <div class="figures-container__header">
+              <h2 class="title-section">Основні цифри</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="container-features__numbers-box">
-              <div class="container-features__numbers">
-                <p class="features__number">01</p>
-                <p class="features__text">Lorem ipsum dolor</p>
+            <div class="figures-container__body figures">
+              <div>
+                <p class="figures__number">01</p>
+                <p class="figures__text">Lorem ipsum dolor</p>
               </div>
 
-              <div class="container-features__numbers">
-                <p class="features__number">02</p>
-                <p class="features__text">Lorem ipsum dolor</p>
+              <div>
+                <p class="figures__number">02</p>
+                <p class="figures__text">Lorem ipsum dolor</p>
               </div>
 
-              <div class="container-features__numbers">
-                <p class="features__number">03</p>
-                <p class="features__text">Lorem ipsum dolor</p>
+              <div>
+                <p class="figures__number">03</p>
+                <p class="figures__text">Lorem ipsum dolor</p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
+      <section class="features-section">
+        <div class="wrapper">
           <div class="container">
-            <div class="container__img gap-right">
-              <img src="./img/features.png" alt="features" />
+            <div class="img-container">
+              <img
+                class="features-img"
+                src="./img/features.png"
+                width="100%"
+                alt="features"
+              />
             </div>
-            <div class="container__content txt-align-left" id="features">
-              <h2 class="gap-bottom">Переваги</h2>
+            <div class="content-container" id="features">
+              <h2 class="title-section">Переваги</h2>
               <ul>
                 <li>
                   <h4>Lorem ipsum dolor</h4>
@@ -126,14 +158,14 @@
         </div>
       </section>
 
-      <section class="section-details gap-section-btm" id="details">
+      <section class="details-section" id="details">
+        <h2 class="title-section">Деталі</h2>
         <div class="wrapper">
-          <h2 class="title-section gap-bottom">Деталі</h2>
-          <div class="details-wrap bg-grey gap-bottom">
-            <div class="container txt-align-left">
-              <div class="container__content gap-right">
-                <h2 class="gap-bottom">Заголовок</h2>
-                <p class="gap-bottom">
+          <div class="details-container">
+            <div class="container">
+              <div class="content-container">
+                <h2 class="title-section">Заголовок</h2>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.
                   Class aptent taciti sociosqu ad litora torquent per conubia
@@ -141,21 +173,31 @@
                 </p>
               </div>
 
-              <div class="container__img">
-                <img src="./img/detail1.png" alt="" />
+              <div class="img-container container-reorder">
+                <img
+                  class="detail-img"
+                  src="./img/detail1.png"
+                  width="100%"
+                  alt=""
+                />
               </div>
             </div>
           </div>
 
-          <div class="details-wrap bg-grey">
-            <div class="container txt-align-left">
-              <div class="container__img gap-right">
-                <img src="./img/detail2.png" alt="" />
+          <div class="details-container">
+            <div class="container">
+              <div class="img-container">
+                <img
+                  class="detail-img"
+                  src="./img/detail2.png"
+                  width="100%"
+                  alt=""
+                />
               </div>
 
-              <div class="container__content">
-                <h2 class="gap-bottom">Заголовок</h2>
-                <p class="gap-bottom">
+              <div class="content-container">
+                <h2 class="title-section">Заголовок</h2>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.
                   Class aptent taciti sociosqu ad litora torquent per conubia
@@ -167,42 +209,46 @@
         </div>
       </section>
 
-      <section class="section-options bg-grey gap-section-btm">
+      <section class="options-section">
         <div class="wrapper">
-          <div class="options-wrap">
-            <div class="container-options">
-              <h2 class="title-section gap-bottom">Варіанти</h2>
-              <div class="container-cards">
-                <div class="card-wrap">
-                  <img src="./img/option1.png" alt="option" />
-                  <p class="product-name">Назва товару</p>
-                  <p class="price">1000 грн.</p>
-                  <button class="button" type="button">Замовити</button>
+          <div class="options-container">
+            <h2 class="title-section">Варіанти</h2>
+            <div class="cards-container">
+              <div class="cards-container__card card-product">
+                <div class="img-container">
+                  <img src="./img/option1.png" width="100%" alt="option-1" />
                 </div>
+                <p class="card-product__name">Назва товару</p>
+                <p class="card-product__price">1000 грн.</p>
+                <a class="link-button" href="#contacts">Замовити</a>
+              </div>
 
-                <div class="card-wrap">
-                  <img src="./img/option1.png" alt="option" />
-                  <p class="product-name">Назва товару</p>
-                  <p class="price">2000 грн.</p>
-                  <button class="button" type="button">Замовити</button>
+              <div class="cards-container__card card-product">
+                <div class="img-container">
+                  <img src="./img/option2.png" width="100%" alt="option-2" />
                 </div>
+                <p class="card-product__name">Назва товару</p>
+                <p class="card-product__price">2000 грн.</p>
+                <a class="link-button" href="#contacts">Замовити</a>
+              </div>
 
-                <div class="card-wrap">
-                  <img src="./img/option1.png" alt="option" />
-                  <p class="product-name">Назва товару</p>
-                  <p class="price">3000 грн.</p>
-                  <button class="button" type="button">Замовити</button>
+              <div class="cards-container__card card-product">
+                <div class="img-container">
+                  <img src="./img/option3.png" width="100%" alt="option-3" />
                 </div>
+                <p class="card-product__name">Назва товару</p>
+                <p class="card-product__price">3000 грн.</p>
+                <a class="link-button" href="#contacts">Замовити</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-reviews gap-section-btm" id="reviews">
+      <section class="section-reviews" id="reviews">
         <div class="wrapper">
-          <h2 class="title-section gap-bottom">Відгуки</h2>
-          <div class="slide-nav gap-bottom" id="slide-nav">
+          <h2 class="title-section">Відгуки</h2>
+          <div class="slider-nav" id="slider-nav">
             <button class="btn-next" id="btn-next">
               <img
                 src="./img/arrow_left.svg"
@@ -210,8 +256,8 @@
                 id="arrow-left"
               />
             </button>
-            <span class="counter-slide">
-              <span class="current-slide" id="current">1</span>/3
+            <span class="counter-slider">
+              <span class="current-slider" id="current">1</span>/3
             </span>
             <button class="btn-prev" id="btn-prev">
               <img
@@ -221,118 +267,133 @@
               />
             </button>
           </div>
-          <div class="review-cards-wrap" id="slide-screen">
-            <div class="slide-line" id="slide-line">
-              <div class="slide">
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+          <div class="review-cards-container" id="slider-screen">
+            <div class="slider-line" id="slider-line">
+              <div class="slider">
+                <div class="review-card">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_1.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">John Smith</p>
+                      <p class="review-card__client-name">John Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
+                    <p class="review-card__text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                      mattis. Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Eos officiis animi quaerat quisquam eveniet
+                      voluptates repellat aliquid ea quos fugiat, ratione, nam
+                      quasi. Similique ratione quae sed natus eos deserunt
+                      commodi consequatur, perspiciatis suscipit fugiat alias!
+                      Expedita consequuntur error quod consequatur assumenda nam
+                      possimus dolores. Distinctio suscipit vel, veniam delectus
+                      totam iusto quae iure aut accusamus magnam quaerat ipsam
+                      natus sint, iste nesciunt quos! Animi laboriosam quam
+                      sequi molestias modi possimus mollitia amet quas quia
+                      neque ipsam qui, a magni quidem consequuntur vel nesciunt
+                      repellendus soluta officiis id veniam nemo? Libero autem
+                      quis voluptatum, nesciunt voluptatibus doloribus ea sed
+                      magni!
                     </p>
                   </div>
                 </div>
 
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                <div class="review-card">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_2.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">John Smith</p>
+                      <p class="review-card__client-name">John Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ex, non. A minima ipsum maiores, illum tenetur accusamus
+                      facilis esse praesentium.
                     </p>
                   </div>
                 </div>
 
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                <div class="review-card">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_3.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">John Smith</p>
+                      <p class="review-card__client-name">John Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod, velit autem delectus magni, consectetur repellat
+                      officiis dolores officia temporibus quos porro excepturi.
                     </p>
                   </div>
                 </div>
 
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                <div class="review-card">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_4.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">John Smith</p>
+                      <p class="review-card__client-name">John Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Modi, aperiam accusantium id a hic rem quidem natus
+                      veritatis deleniti optio repellat alias, quisquam, atque
+                      molestiae!
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="slide">
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+              <div class="slider">
+                <div class="review-card">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_1.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Jery Smith</p>
+                      <p class="review-card__client-name">Jery Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Earum eos corrupti minima facilis. Omnis voluptas unde
+                      corporis consequuntur porro corrupti quia expedita,
+                      aspernatur asperiores voluptatem similique ab animi?
                     </p>
                   </div>
                 </div>
 
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                <div class="review-card">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_2.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Jerry Smith</p>
+                      <p class="review-card__client-name">Jerry Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
+                    <p class="review-card__text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
                       mattis.
@@ -340,118 +401,131 @@
                   </div>
                 </div>
 
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                <div class="review-card">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_3.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Jerry Smith</p>
+                      <p class="review-card__client-name">Jerry Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aut voluptas temporibus, veniam molestias sed
+                      consequuntur, in, sint id fugiat distinctio molestiae
+                      recusandae architecto?
                     </p>
                   </div>
                 </div>
 
-                <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
+                <div class="review-card">
+                  <div class="client-container">
                     <div class="gap-right">
                       <img src="./img/client_img_4.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Jerry Smith</p>
+                      <p class="review-card__client-name">Jerry Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Placeat corporis omnis odio fuga consequuntur dolor? Ut
+                      soluta odit temporibus maiores beatae ad reiciendis
+                      similique illum maxime iure iusto accusantium, magni eos
+                      fugit necessitatibus? Aliquam, cumque, nihil nam, soluta
+                      laudantium delectus aut non voluptatibus minus impedit
+                      dolor explicabo error doloremque debitis? Sunt eligendi
+                      atque officiis dolorum adipisci rem a minima velit!
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="slide">
+              <div class="slider">
                 <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_1.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Simon Smith</p>
+                      <p class="review-card__client-name">Simon Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellendus cupiditate dolore sequi minus ipsum corporis
+                      quibusdam praesentium labore? Voluptatibus, laboriosam.
                     </p>
                   </div>
                 </div>
 
                 <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_2.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Simon Smith</p>
+                      <p class="review-card__client-name">Simon Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
+                    <p class="review-card__text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                      mattis. Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Alias soluta debitis mollitia, enim
+                      magni illum.
                     </p>
                   </div>
                 </div>
 
                 <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_3.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Simon Smith</p>
+                      <p class="review-card__client-name">Simon Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium aliquam ab illum autem, nulla temporibus earum
+                      quos totam facilis minima. Sapiente odit non, quod aperiam
+                      aliquam cum enim dolor, dolores officia illo, animi omnis
+                      amet pariatur obcaecati possimus molestias nam minus
+                      architecto deserunt ipsam veniam?
                     </p>
                   </div>
                 </div>
 
                 <div class="review-card txt-align-left">
-                  <div class="client-wrap gap-bottom">
-                    <div class="gap-right">
+                  <div class="client-container">
+                    <div>
                       <img src="./img/client_img_4.png" alt="client" />
                     </div>
                     <div>
-                      <p class="client__name">Simon Smith</p>
+                      <p class="review-card__client-name">Simon Smith</p>
                       <p><img src="./img/stars.png" alt="rating" /></p>
                     </div>
                   </div>
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
+                    <p class="review-card__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Natus corporis unde quos id possimus veritatis officia
+                      voluptate ea repudiandae nisi earum beatae architecto
+                      labore fuga, nemo non nesciunt quod commodi nihil. Optio,
+                      incidunt maiores! Saepe?
                     </p>
                   </div>
                 </div>
@@ -461,48 +535,47 @@
         </div>
       </section>
 
-      <section class="section-contact bg-grey">
+      <section class="section-contact" id="contacts">
         <div class="wrapper">
-          <h2 class="title-section gap-bottom">З’вязатися з нами</h2>
-          <div class="contacts-container txt-align-left">
+          <h2 class="title-section">З’вязатися з нами</h2>
+          <div class="contacts-wrapper">
             <form class="contacts-form">
-              <h3 class="contacts-title gap-bottom">Форма для звязку</h3>
+              <h3 class="contacts-title">Форма для звязку</h3>
               <label for="customer-name">Призвище та І’мя</label>
               <input type="text" name="customer-name" id="customer-name" />
               <label for="customer-tel">Телефон</label>
               <input type="tel" name="customer-tel" id="customer-tel" />
               <label for="customer-description">Коментар до замовлення</label>
               <textarea
-                class="gap-bottom"
                 name="customer-description"
                 id="customer-description"
               ></textarea>
               <button class="button button-submit">Відправити</button>
             </form>
 
-            <div class="contacts-wrap">
+            <div class="contacts-container">
               <div>
-                <h3 class="contacts-title gap-bottom">Контактна інформація</h3>
+                <h3 class="contacts-title">Контактна інформація</h3>
                 <table class="contacts-tbl">
                   <tr>
-                    <td class="col1">Телефон</td>
-                    <td class="col2">+380 00 000 00 00</td>
+                    <td class="column-title">Телефон</td>
+                    <td class="column-value">+380 00 000 00 00</td>
                   </tr>
 
                   <tr>
-                    <td class="col1" class="col1">Email</td>
-                    <td class="col2">Email123456@email.com</td>
+                    <td class="column-title" class="column-title">Email</td>
+                    <td class="column-value">Email123456@email.com</td>
                   </tr>
 
                   <tr>
-                    <td class="col1">Адреса:</td>
-                    <td class="col2">Київ м-н Незалежності б 16</td>
+                    <td class="column-title">Адреса</td>
+                    <td class="column-value">Київ м-н Незалежності б 16</td>
                   </tr>
                 </table>
               </div>
               <div>
-                <h3 class="contacts-title gap-bottom">Наші соціальні мережі</h3>
-                <div class="social-wrap">
+                <h3 class="contacts-title">Наші соціальні мережі</h3>
+                <div class="social-container">
                   <a class="social">
                     <svg class="icon">
                       <use xlink:href="./img/cursor.svg#icon-facebook"></use>
@@ -531,7 +604,7 @@
       </section>
     </main>
     <footer></footer>
-    <script src="./js/slide-reviews.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/toggle-menu.js"></script>
+    <script src="./js/slider-reviews.js"></script>
   </body>
 </html>
