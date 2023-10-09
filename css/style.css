@@ -163,7 +163,7 @@ a {
 .mob-menu__container {
   top: 0;
   right: 0;
-  padding: 15px;
+  padding: 25px 0 25px 15px;
   width: 50%;
   opacity: 0;
   transform: scale3d(1, 0, 1);
@@ -176,7 +176,10 @@ a {
   transform: scale3d(1, 1, 1);
 }
 
-.menu-mobile ul,
+.menu-mobile ul {
+  gap: 25px;
+}
+
 .client-container,
 .social-container {
   gap: 15px;
