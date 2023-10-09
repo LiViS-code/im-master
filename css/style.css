@@ -421,10 +421,10 @@ a {
 }
 
 .slider-line {
-  position: relative;
-  left: 0;
+  /* position: relative;
+  left: 0; */
   gap: 24px;
-  transition: left ease 1s;
+  transition: transform ease 1s;
 }
 
 .review-card__text {
