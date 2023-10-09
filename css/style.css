@@ -424,6 +424,7 @@ a {
 
 .client-container {
   justify-content: flex-start;
+  text-align: left;
 }
 
 .social {
