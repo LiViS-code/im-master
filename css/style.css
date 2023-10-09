@@ -180,6 +180,10 @@ a {
   gap: 25px;
 }
 
+.menu-mobile ul li a {
+  padding: 10px;
+}
+
 .client-container,
 .social-container {
   gap: 15px;
