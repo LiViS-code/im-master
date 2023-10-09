@@ -132,11 +132,11 @@ a {
 }
 
 .toggle-menu span:nth-child(1) {
-  top: 11px;
+  transform: translateY(-10px);
 }
 
 .toggle-menu span:nth-child(3) {
-  top: 31px;
+  transform: translateY(10px);
 }
 
 .toggle-menu.active span:nth-child(1),
