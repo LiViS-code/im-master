@@ -67,8 +67,7 @@ a {
 
 .toggle-menu,
 .img-container,
-.container,
-.social-container {
+.container {
   justify-content: center;
 }
 
@@ -92,7 +91,6 @@ a {
   gap: 30px;
 }
 
-.toggle-menu,
 .menu-mobile ul,
 .container,
 .content-container,
@@ -102,7 +100,6 @@ a {
 }
 
 .toggle-menu {
-  gap: 7px;
   top: 30px;
   right: 15px;
   z-index: 10;
@@ -135,17 +132,17 @@ a {
 }
 
 .toggle-menu span:nth-child(1) {
-  top: 8px;
+  top: 11px;
 }
 
 .toggle-menu span:nth-child(3) {
-  top: 34px;
+  top: 31px;
 }
 
 .toggle-menu.active span:nth-child(1),
 .toggle-menu.active span:nth-child(3) {
   top: auto;
-  width: 90%;
+  width: 70%;
 }
 
 .toggle-menu.active span:nth-child(2) {
@@ -203,7 +200,8 @@ a {
 .header__container,
 .header__menu ul,
 .contacts-container,
-.slider {
+.slider,
+.social-container {
   justify-content: space-between;
 }
 
@@ -508,15 +506,15 @@ a {
 }
 
 .social {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #d9d9d9;
   transition: fill ease 250ms, background-color ease 250ms;
 }
 
 .social .icon {
-  width: 18px;
+  width: 16px;
   fill: #4e4e4e;
 }
 
@@ -642,10 +640,6 @@ a {
 
   .button-submit {
     margin: 0;
-  }
-
-  .social-container {
-    justify-content: left;
   }
 }
 
