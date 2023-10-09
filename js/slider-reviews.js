@@ -12,10 +12,13 @@ const gapSlider = parseInt(styleSliderLine.gap); // расстояние меж�
 function init() {
   widthNumber = document.getElementById("slider-screen").offsetWidth;
   sliderLine.style.width =
-    (widthNumber + gapSlider - 1) * sliderAll.length + "px";
+    (widthNumber + gapSlider) * sliderAll.length - gapSlider + "px";
   sliderAll.forEach((item) => {
     item.style.width = widthNumber + "px";
   }); // утсановить ширину слайда равной ширине кадра просмотра
+
+  console.log("widthNumber", widthNumber);
+  console.log("sliderLine.style.width", sliderLine.style.width);
 }
 
 function changeSlider(e) {
