@@ -178,7 +178,7 @@ a {
 }
 
 .menu-mobile ul li a {
-  padding: 10px;
+  padding: 10px 100% 10px 0;
 }
 
 .client-container,
