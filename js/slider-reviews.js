@@ -1,7 +1,7 @@
 let offset = 0; // величина сменщения слайдов
 let currSliderNum = 1; // номер отображаемого слайдера в текущий момент
+let widthNumber; // ширина кадра просмотра на странице
 const sliderLine = document.getElementById("slider-line"); // полоса слайдов
-let widthNumber = document.getElementById("slider-screen").offsetWidth; // ширина кадра просмотра на странице
 const slider = document.getElementById("slider"); // один слайд
 const sliderAll = document.querySelectorAll(".slider"); // все слайды из разметки
 const sliderNav = document.getElementById("slider-nav"); // навигация для слайдов
@@ -10,6 +10,9 @@ const styleSliderLine = getComputedStyle(sliderLine);
 const gapSlider = parseInt(styleSliderLine.gap); // расстояние между слайдами в полосе слайдов из CSS
 
 function init() {
+  widthNumber = document.getElementById("slider-screen").offsetWidth;
+  sliderLine.style.width =
+    (widthNumber + gapSlider - 1) * sliderAll.length + "px";
   sliderAll.forEach((item) => {
     item.style.width = widthNumber + "px";
   }); // утсановить ширину слайда равной ширине кадра просмотра
@@ -54,15 +57,8 @@ function moveSlider(offset, currSliderNum) {
   sliderLine.style.left = -offset - gapSlider * (currSliderNum - 1) + "px"; // сместить слайдер
 }
 
-function resizeWindow() {
-  // window.location.reload();
-  widthNumber = document.getElementById("slider-screen").offsetWidth;
-  changeSlider();
-  init();
-}
-
 init();
 
 sliderNav.addEventListener("click", changeSlider);
 
-window.addEventListener("resize", resizeWindow);
+window.addEventListener("resize", init);
